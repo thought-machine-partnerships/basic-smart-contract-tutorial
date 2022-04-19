@@ -23,7 +23,7 @@ Full documentation of the vault caller script is available on the 'Development a
 
 We will also be using the set of unit tests in `simple_tutorial_tests.py`. We will be using them to demonstrate the functionality of the Smart contract we write.
 
-Modify `simple_tutorial_tests.py` and ensure that `core_api_url` and `auth_token` are set to the correct values. To learn more about these variables, see the Core API Documentation.
+After checking out each exercise, modify `simple_tutorial_tests.py` and ensure that `core_api_url` and `auth_token` are set to the correct values. To learn more about these variables, see the Core API Documentation.
 
 > The unit tests are designed to run with the exercise they are included with. As you progress through the branches of this tutorial, the file will change accordingly, with the API URL and auth token needing to be set each time.
 
