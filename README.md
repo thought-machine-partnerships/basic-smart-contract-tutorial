@@ -26,3 +26,7 @@ We will also be using the set of unit tests in `simple_tutorial_tests.py`. We wi
 Modify `simple_tutorial_tests.py` and ensure that `core_api_url` and `auth_token` are set to the correct values. To learn more about these variables, see the Core API Documentation.
 
 > The unit tests are designed to run with the exercise they are included with. As you progress through the branches of this tutorial, the file will change accordingly, with the API URL and auth token needing to be set each time.
+
+## Exercise Branches
+
+Each of the exercises is set up on a different branch in this repo (`exercise-1`, `exercise-2` etc.). To check out the first exercise, run `git checkout exercise-1`. In order to see a solution to the exercise, run `git checkout exercise-1-solution`. This is the same for exercise 2, 3 and so forth.
