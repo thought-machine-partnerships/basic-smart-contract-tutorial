@@ -23,8 +23,8 @@ We will be using a script found on this branch, `vault_caller.py`, to allow our 
 Before using the script, you must install the following external libraries via [pip](https://pypi.org/project/pip/) or a similar mechanism:
 
 ```
-python-dateutil
-requests
+pip install python-dateutil
+pip install requests
 ```
 
 Full documentation of the vault caller script is available on the 'Development and testing' page of your Documentation Hub, under the 'Simulation Testing' subheading.
