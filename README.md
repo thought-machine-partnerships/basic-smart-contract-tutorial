@@ -8,6 +8,16 @@ A Smart Contract is the representation of the financial logic of a given bank Pr
 
 The first step to writing a smart contract is gathering your requirements and designing how you want your smart contract to operate. For this tutorial, we are going to use a simple Current Account Product with an Overdraft facility. This product will allow the customer to spend money, enter an overdraft and charge them a fee when they withdraw past their overdraft limit nonetheless paying a small amount of interest on positive balances.
 
+## Prerequisites
+
+This tutorial assumes a working knowledge of [Python](https://www.python.org/) and [Git](https://git-scm.com/). For Python, you should be familiar with writing functions, annotations and how unit tests work. For Git, you should be familiar with cloning a repository and switching between branches.
+
+You will also need to install the following:
+
+- Python 3
+- Pip
+- An Integrated Development Environment (IDE). Popular choices include [VSCode](https://code.visualstudio.com/), [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [Pycharm](https://www.jetbrains.com/pycharm/), or [neovim](https://neovim.io/) if you're feeling brave.
+
 ## Documentation
 
 Each instance of Vault comes with a URL for the Documentation Hub, which contains the relevant documentation for the version of Vault you're working with. If possible, refer to your own Documentation Hub for reference. The tutorial contains links for the public-facing Documentation Hub, which is likely (but not guaranteed) to also work for your version of Vault.
@@ -16,9 +26,7 @@ The username and password for the public-facing Documentation Hub is available u
 
 ## Before You Start
 
-We will be using the `client` object defined in the helper script in this branch to handle API interactions and a suite of simulation tests to test our Smart Contract as we go. Full documentation of these scripts is available [here](https://documentation.external.thoughtmachine.io/reference/contracts/development_and_testing/).
-
-We will be using a script found on this branch, `vault_caller.py`, to allow our tests to talk to a real instance of Vault. We will be using the `client` object defined in the helper script to handle API interactions and a suite of simulation tests to test our Smart Contract as we go.
+We will be using a script found on later branches, `vault_caller.py`, to allow our tests to talk to a real instance of Vault. We will be using the `client` object defined in this Vault caller script to handle API interactions and a suite of simulation tests to test our Smart Contract as we go. Full documentation of this script is available [here](https://documentation.external.thoughtmachine.io/reference/contracts/development_and_testing/) under the Simulation Testing subheader, if you want a deeper understanding of Smart Contract testing. 
 
 Before using the script, you must install the following external libraries via [pip](https://pypi.org/project/pip/) or a similar mechanism:
 
@@ -26,10 +34,6 @@ Before using the script, you must install the following external libraries via [
 pip install python-dateutil
 pip install requests
 ```
-
-Full documentation of the vault caller script is available on the 'Development and testing' page of your Documentation Hub, under the 'Simulation Testing' subheading.
-
-We will also be using the set of unit tests in `simple_tutorial_tests.py`. We will be using them to demonstrate the functionality of the Smart contract we write.
 
 ## Testing Solutions
 
