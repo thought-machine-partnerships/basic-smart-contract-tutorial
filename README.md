@@ -24,27 +24,12 @@ Each instance of Vault comes with a URL for the Documentation Hub, which contain
 
 The username and password for the public-facing Documentation Hub is available upon request.
 
-## Before You Start
+## Cloning the Repo
 
-We will be using a script found on later branches, `vault_caller.py`, to allow our tests to talk to a real instance of Vault. We will be using the `client` object defined in this Vault caller script to handle API interactions and a suite of simulation tests to test our Smart Contract as we go. Full documentation of this script is available [here](https://documentation.external.thoughtmachine.io/reference/contracts/development_and_testing/) under the Simulation Testing subheader, if you want a deeper understanding of Smart Contract testing. 
+To follow along with this tutorial, you will need to clone this repo to your local machine. Using a method of your choice, clone this repo to a location of your choosing.
 
-Before using the script, you must install the following external libraries via [pip](https://pypi.org/project/pip/) or a similar mechanism:
+For example, navigate your terminal to somewhere like `~/Documents`, then run `git clone https://github.com/thought-machine-partnerships/basic-smart-contract-tutorial.git`
 
-```
-pip install python-dateutil
-pip install requests
-```
+## Next Steps
 
-## Testing Solutions
-
-Each exercise branch comes with a file named `simple_tutorial_tests.py`. We will be using this to demonstrate the functionality of the Smart contract we write. This will contain a different test for each exercise, but it can be run for every exercise using the command
-
-```
-python3 -m unittest simple_tutorial_tests <CORE_API_URL> <AUTH_TOKEN>
-```
-
-Where `<CORE_API_URL>` and `<AUTH_TOKEN>` are the Core API URL and the Authentication Token for your instance of Vault respectively. To learn more about these variables, see the Core API Documentation.
-
-## Exercise Branches
-
-Each of the exercises is set up on a different branch in this repo (`exercise-1`, `exercise-2` etc.). To check out the first exercise, run `git checkout exercise-1`. In order to see a solution to the exercise, run `git checkout exercise-1-solution`. This is the same for exercise 2, 3 and so forth.
+Each of the exercises is set up on a different branch in this repo (`exercise-1`, `exercise-2` etc.). To check out the first exercise, run `git checkout exercise-1`.
